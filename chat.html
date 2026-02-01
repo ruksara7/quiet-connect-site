@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiet Chat | Quiet Connect</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script> 
-    <script src="main.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiet Connect – Chat</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
 </head>
 <body>
-    <main class="page-container chat-page">
-        <div class="chat-container">
-            <div class="chat-header">
-                <h1>Quiet Chat</h1>
-                <div class="status-indicator" id="connectionStatus">● Connected</div>
-            </div>
-            
-            <div class="messages" id="messages"></div>
-            
-            <div class="chat-input-container">
-                <div class="input-wrapper">
-                    <input type="text" id="messageInput" placeholder="Type your message..." maxlength="500">
-                    <button id="sendBtn" class="send-btn">Send</button>
-                </div>
-                <div class="chat-controls">
-                    <a href="voices.html" class="link-subtle">← Back to voices</a>
-                </div>
-            </div>
-        </div>
-    </main>
+
+<div class="container">
+<div id="messages" class="messages"></div>
+
+<form id="chatForm">
+  <input id="input" placeholder="Type gently…" autocomplete="off">
+</form>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
