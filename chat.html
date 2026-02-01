@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+<div class="container fade">
+
+<nav>
+  <div>Quiet Connect</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+<div id="menu" class="menu">
+  <a href="index.html">Arrival</a>
+  <a href="reflections.html">Reflections</a>
+  <a href="voices.html">Voices</a>
+  <a href="waiting.html">Waiting</a>
+  <a href="chat.html">Talk</a>
+</div>
+
+<div id="messages" class="messages"></div>
+
+<form id="chatForm">
+  <input id="input" placeholder="Type gently…" autocomplete="off">
+</form>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
